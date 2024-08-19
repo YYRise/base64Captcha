@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/go-redis/redis"
-	"github.com/mojocn/base64Captcha"
+	"github.com/YYRise/base64Captcha"
 )
 
 // customizeRdsStore An object implementing Store interface
@@ -135,7 +135,7 @@ func captchaVerifyHandle(w http.ResponseWriter, r *http.Request) {
 // start a net/http server
 func main() {
 
-	staticPath := fmt.Sprintf("%s/src/github.com/mojocn/base64Captcha/_examples/static", os.Getenv("GOPATH"))
+	staticPath := fmt.Sprintf("%s/src/github.com/YYRise/base64Captcha/_examples/static", os.Getenv("GOPATH"))
 
 	// serve Vuejs+ElementUI+Axios Web Application
 	http.Handle("/", http.FileServer(http.Dir(staticPath)))

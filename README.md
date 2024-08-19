@@ -1,7 +1,7 @@
 # A flexible and various captcha package
-![Test](https://github.com/mojocn/base64Captcha/workflows/Test/badge.svg)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mojocn/base64Captcha)](https://goreportcard.com/report/github.com/mojocn/base64Captcha)
-[![GoDoc](https://godoc.org/github.com/mojocn/base64Captcha?status.svg)](https://godoc.org/github.com/mojocn/base64Captcha)
+![Test](https://github.com/YYRise/base64Captcha/workflows/Test/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/YYRise/base64Captcha)](https://goreportcard.com/report/github.com/YYRise/base64Captcha)
+[![GoDoc](https://godoc.org/github.com/YYRise/base64Captcha?status.svg)](https://godoc.org/github.com/YYRise/base64Captcha)
 [![Build Status](https://travis-ci.org/mojocn/base64Captcha.svg?branch=master)](https://travis-ci.org/mojocn/base64Captcha)
 [![codecov](https://codecov.io/gh/mojocn/base64Captcha/branch/master/graph/badge.svg)](https://codecov.io/gh/mojocn/base64Captcha)
 ![stability-stable](https://img.shields.io/badge/stability-stable-brightgreen.svg)
@@ -12,22 +12,22 @@ Base64captcha supports any unicode character and can easily be customized to sup
 
 ## 1. 📖📖📖 Doc & Demo
 
-* [English](https://godoc.org/github.com/mojocn/base64Captcha)
+* [English](https://godoc.org/github.com/YYRise/base64Captcha)
 * [中文文档](https://mojotv.cn/go/refactor-base64-captcha)
 * [Playground](https://captcha.mojotv.cn)
 
 ## 2. 🚀🚀🚀 Quick start
 ### 2.1 🎬🎬🎬 Use history version
-[Tag v1.2.2](https://github.com/mojocn/base64Captcha/tree/v1.2.2)
+[Tag v1.2.2](https://github.com/YYRise/base64Captcha/tree/v1.2.2)
 
-` go get github.com/mojocn/base64Captcha@v1.2.2`
+` go get github.com/YYRise/base64Captcha@v1.2.2`
 
 or edit your `go.mod` file to
 
-`github.com/mojocn/base64Captcha@v1.2.2`
+`github.com/YYRise/base64Captcha@v1.2.2`
 
 ### 2.2 📥📥📥 Download package
-    go get -u github.com/mojocn/base64Captcha
+    go get -u github.com/YYRise/base64Captcha
 For Gopher from mainland China without VPN `go get golang.org/x/image` failure solution:
 - go version > 1.11
 - set env `GOPROXY=https://goproxy.io`
@@ -150,7 +150,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/mojocn/base64Captcha"
+	"github.com/YYRise/base64Captcha"
 	"log"
 	"net/http"
 )

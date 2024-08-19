@@ -4,12 +4,12 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/mojocn/base64Captcha"
+	"github.com/YYRise/base64Captcha"
 	"log"
 	"net/http"
 )
 
-//configJsonBody json request body.
+// configJsonBody json request body.
 type configJsonBody struct {
 	Id            string
 	CaptchaType   string
@@ -49,7 +49,7 @@ func generateCaptchaHandler(w http.ResponseWriter, r *http.Request) {
 		driver = param.DriverDigit
 	}
 	c := base64Captcha.NewCaptcha(driver, store)
-	id, b64s,_, err := c.Generate()
+	id, b64s, _, err := c.Generate()
 	body := map[string]interface{}{"code": 1, "data": b64s, "captchaId": id, "msg": "success"}
 	if err != nil {
 		body = map[string]interface{}{"code": 0, "msg": err.Error()}
@@ -81,7 +81,7 @@ func captchaVerifyHandle(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(body)
 }
 
-//start a net/http server
+// start a net/http server
 func main() {
 	//serve Vuejs+ElementUI+Axios Web Application
 	http.Handle("/", http.FileServer(http.Dir("./static")))

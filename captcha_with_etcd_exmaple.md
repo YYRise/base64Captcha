@@ -7,7 +7,7 @@ package captcha
 
 import (
 	"context"
-	"github.com/mojocn/base64Captcha"
+	"github.com/YYRise/base64Captcha"
 	"go.etcd.io/etcd/clientv3"
 	"image/color"
 	"library/database/etcd"
