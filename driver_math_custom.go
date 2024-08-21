@@ -107,7 +107,7 @@ func (d *DriverMathCustom) GenerateIdQuestionAnswer() (id, question, answer stri
 		a := rand.Int31n(d.MaxNum) + 1
 		b := rand.Int31n(a)
 		question = fmt.Sprintf("%d-%d=?", a, b)
-		mathResult = a + b
+		mathResult = a - b
 	case "x":
 		a := rand.Int31n(d.MaxNum)
 		b := rand.Int31n(d.MaxNum)
